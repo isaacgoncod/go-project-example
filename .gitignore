@@ -24,3 +24,6 @@ go.sum
 
 # env file
 .env
+
+#Db folder
+db/
