@@ -16,7 +16,6 @@ func main() {
 
 	if err != nil {
 		logger.Errf("Config Initialization Error: %v", err)
-
 		return
 	}
 
