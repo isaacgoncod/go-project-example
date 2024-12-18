@@ -9,7 +9,7 @@ import (
 func InitializeMySQL() (*gorm.DB, error) {
 	logger := GetLogger("mysql")
 
-	dsn := "root:@tcp(127.0.0.1:3306)/go_project_example"
+	dsn := "root:@tcp(127.0.0.1:3306)/go_project_example?charset=utf8mb4&parseTime=True&loc=Local"
 
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 
